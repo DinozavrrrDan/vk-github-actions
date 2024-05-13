@@ -24,11 +24,13 @@ jobs:
        #Команда, которая будет выполнена в терминале
         run: echo "Hello GitHub Actions!"
   print_how:
+     needs: print_hello 
      runs-on: ubuntu-latest 
      steps:
       - name: how
         run: echo "How are you GitHub Actions?"
   print_bye:
+     needs: print_how 
      runs-on: ubuntu-latest 
      steps:
        - name: bye
