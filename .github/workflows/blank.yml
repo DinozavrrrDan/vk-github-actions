@@ -26,10 +26,10 @@ jobs:
   print_how:
      runs-on: ubuntu-latest 
      steps:
-      - name: hello
-        run: echo “How are you GitHub Actions?“
+      - name: how
+        run: echo "How are you GitHub Actions?"
   print_bye:
-    runs-on: ubuntu-latest 
-    steps:
-      - name: hello
-        run: echo “Good bye GitHub Actions!"
+     runs-on: ubuntu-latest 
+     steps:
+       - name: bye
+         run: echo "Good bye GitHub Actions!"
